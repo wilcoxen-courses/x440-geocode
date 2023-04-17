@@ -33,3 +33,5 @@ makefile
 *.pkl
 *.zip
 *.csv
+
+!locator_map.gpkg
