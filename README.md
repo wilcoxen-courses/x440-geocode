@@ -10,7 +10,7 @@ There are no input files: the addresses to be geocoded are built into **demo.py*
 
 ## Deliverables
 
-None. This is an example only and there's nothing due.
+**None**. This is an example only and there's **nothing due**.
 
 ## Instructions
 
@@ -20,4 +20,4 @@ None. This is an example only and there's nothing due.
 
 ## Tips
 
-* Nominatium often returns multiple records for each search since there may be several things near the address. Each result has a detailed JSON object that describes what it is. If you just need the coordinates, it may be sufficient to pick any one of the records since the differences in the coordinates will be small.
+* Nominatium's purpose is to identify entities at an address rather than just the coordinates per se. As a result, it usually returns multiple records for each search since there may be several things near the address. Each result has a detailed JSON object that describes what it is. If you just need the coordinates, it may be sufficient to pick any one of the records since the differences in the coordinates will be small.
