@@ -46,11 +46,14 @@ output = []
 
 for a in addresses:
 
-    #  Build the payload and make the query
+    #  Build the payload, set up a header to identify ourselves, and make
+    #  the query
 
     payload = { 'q':f'<{a}>', 'format':'json' }
+    headers = { 'user-agent': 'pai789/1' }
 
-    response = requests.get(api,payload)
+    response = requests.get(api,payload,headers=headers)
+
     assert response.status_code == 200
 
     #  Parse the result
